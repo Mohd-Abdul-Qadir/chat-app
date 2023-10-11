@@ -9,9 +9,9 @@ const port = process.env.PORT || 4500;
 const users = [{}];
 
 app.use(cors());
-app.get("/", (req, res) => {
-  res.send("Hello ITS WOrKING");
-});
+// app.get("/", (req, res) => {
+//   res.send("Hello ITS WOrKING");
+// });
 
 app.use(express.static("build"));
 app.get("*", (req, res) => {
